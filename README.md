@@ -3,4 +3,4 @@ The original commandUi has click tp on with no way to turn it off for some reaso
 
 Loadstring:
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/altxria/ModifiedCommandUI/main/ModdedCommandUI"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/altxria/ModifiedCommandUI/main/ModdedCommandUI.lua"))()
