@@ -843,7 +843,7 @@ local function CancelLock()
 	UserInputService.MouseDeltaSensitivity = OriginalSensitivity
 
 	if Animation then
-		
+		Animation:Cancel()
 	end
 end
 
@@ -898,7 +898,10 @@ local function Load()
 					print(Vector.Y)
 					mousemoverel((Vector.X - UserInputService:GetMouseLocation().X) * 1, (Vector.Y - UserInputService:GetMouseLocation().Y) * 1)
 				else
+					local humanoid = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 					Camera.CFrame = CFramenew(Camera.CFrame.Position, aimbotVariables.Locked.Character[aimbotVariables.LockPart].Position)
+					
+					hum.CFrame = CFrame.new(hum.Position, Vector3.new(aimbotVariables.Locked.Character[aimbotVariables.LockPart].Position.X ,hum.Position.Y,aimbotVariables.Locked.Character[aimbotVariables.LockPart].Position.Z))
 					UserInputService.MouseDeltaSensitivity = 0
 				end
 
