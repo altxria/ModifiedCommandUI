@@ -894,7 +894,8 @@ local function Load()
 			if aimbotVariables.Locked then
 				if aimbotVariables.Third_Person then
 					local Vector = Camera:WorldToViewportPoint(aimbotVariables.Locked.Character[aimbotVariables.LockPart].Position)
-					mousemoverel((Vector.X - UserInputService:GetMouseLocation().X) * 1, (Vector.Y - UserInputService:GetMouseLocation().Y) * 1)
+					print(Vector)
+					--mousemoverel((Vector.X - UserInputService:GetMouseLocation().X) * 1, (Vector.Y - UserInputService:GetMouseLocation().Y) * 1)
 				else
 					Camera.CFrame = CFramenew(Camera.CFrame.Position, aimbotVariables.Locked.Character[aimbotVariables.LockPart].Position)
 					UserInputService.MouseDeltaSensitivity = 0
