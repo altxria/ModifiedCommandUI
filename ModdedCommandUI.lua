@@ -843,7 +843,7 @@ local function CancelLock()
 	UserInputService.MouseDeltaSensitivity = OriginalSensitivity
 
 	if Animation then
-		Animation:Cancel()
+		
 	end
 end
 
@@ -931,7 +931,7 @@ end
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xowie89/MaterialLua/master/Module.lua"))()
 
 MainGui = Material.Load({
-	Title = "Command UI",
+	Title = "Command UI - altxria modified",
 	Style = 1,
 	SizeX = 400,
 	SizeY = 500,
