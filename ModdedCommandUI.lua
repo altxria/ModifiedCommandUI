@@ -849,7 +849,7 @@ end
 
 local function GetClosestPlayer()
 	if not aimbotVariables.Locked then
-		RequiredDistance = 120
+		RequiredDistance = 60
 
 		for _, v in next, Players:GetPlayers() do
 			if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild(aimbotVariables.LockPart) and v.Character:FindFirstChildOfClass("Humanoid") then
@@ -876,7 +876,7 @@ local function Load()
 
 	ServiceConnections.RenderSteppedConnection = RunService.RenderStepped:Connect(function()
 		if aimbotVariables.Aimbot then
-			aimbotVariables.FOVCircle.Radius = 120
+			aimbotVariables.FOVCircle.Radius = 60
 			aimbotVariables.FOVCircle.Thickness = 1
 			aimbotVariables.FOVCircle.Filled = false
 			aimbotVariables.FOVCircle.NumSides = 60
